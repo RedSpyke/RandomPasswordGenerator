@@ -2,7 +2,9 @@ package com.company;
 
 /*
 
-
+  This is a password generator
+  It takes an integer value for the length of the password, the minimum length of the password that will be generated is 12 characters.
+  In order for the password to be valid it must contain at least a lower case character, an upper case character, a digit and a symbol.
 
  */
 
