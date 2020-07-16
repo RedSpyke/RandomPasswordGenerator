@@ -59,12 +59,18 @@ public class PasswordGenerator {
 
         }
 
-        System.out.println(password);
-       // System.out.println("Password valid: " + passwordValidation(String.valueOf(password)));
+      //  System.out.println("Password valid: " + passwordValidation(String.valueOf(password)));
+       // System.out.println(password);
         if(!passwordValidation(String.valueOf(password))){
-            generatePassword(numberCharacters);
+            password.delete(0,password.length());
+            password.append(generatePassword(numberCharacters));
+            return String.valueOf(password);
+
+        } else {
+
+            return String.valueOf(password);
         }
-        return String.valueOf(password);
+
     }
 
     private static boolean passwordValidation (String password){
