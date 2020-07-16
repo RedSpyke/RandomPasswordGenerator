@@ -20,7 +20,7 @@ public class PasswordGenerator {
             minimumNumberCharacters = numberCharacters;
         }
 
-        System.out.println("password length: "+ minimumNumberCharacters);
+       // System.out.println("password length: "+ minimumNumberCharacters);
         int max = 126;
         int min = 33;
 
@@ -60,7 +60,7 @@ public class PasswordGenerator {
         }
 
         System.out.println(password);
-        System.out.println("Password valid: " + passwordValidation(String.valueOf(password)));
+       // System.out.println("Password valid: " + passwordValidation(String.valueOf(password)));
         if(!passwordValidation(String.valueOf(password))){
             generatePassword(numberCharacters);
         }
